@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Counter Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">JS</span>
+                <span>JavaScript Full Course</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="course.html">Full Course</a>
+                <a href="playground.html">Playground</a>
+                <a class="active" href="counter.html">Counter</a>
+                
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="course-hero compact">
+            <div class="container">
+                
+                <h1>Interactive Counter</h1>
+                <p>A small application demonstrating state, DOM selection, functions and events.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container app-shell reveal">
+                <div class="counter-value" id="count">0</div>
+                <div class="counter-actions"><button id="dec" class="btn btn-secondary">−</button><button id="reset"
+                        class="btn btn-secondary">Reset</button><button id="inc" class="btn btn-primary">+</button>
+                </div>
+                <p class="app-status" id="counterStatus">Current state: 0</p>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container"><strong>Counter Application</strong>
+            <span>@Roy</span></div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        let count = 0;
+        const output = document.querySelector("#count");
+        const status = document.querySelector("#counterStatus");
+        function render() { output.textContent = count; status.textContent = "Current state: " + count; output.classList.remove("pulse"); void output.offsetWidth; output.classList.add("pulse"); }
+        document.querySelector("#inc").addEventListener("click", () => { count++; render(); });
+        document.querySelector("#dec").addEventListener("click", () => { count--; render(); });
+        document.querySelector("#reset").addEventListener("click", () => { count = 0; render(); });
+    </script>
+</body>
+
+</html>

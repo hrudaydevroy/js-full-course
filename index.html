@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="A complete JavaScript learning course with 60 chapters, live examples, playgrounds and projects.">
+  <title>JavaScript Full Course</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="brand-mark">JS</span><span>JavaScript Full Course</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="course.html">Full Course</a>
+        <a href="playground.html">Playground</a>
+        <a href="counter.html">Counter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">60 CHAPTERS • JAVASCRIPT • PROJECTS</span>
+          <h1>Build with <span>JavaScript.</span></h1>
+          <p>Learn JavaScript from fundamentals to DOM, APIs, asynchronous programming, browser storage, security,
+            performance and real applications.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="course.html">Start Full Course →</a>
+            <a class="btn btn-secondary" href="playground.html">Open Playground</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>60</strong><span>Chapters</span></div>
+            <div><strong>2</strong><span>Projects</span></div>
+            <div><strong>∞</strong><span>Practice</span></div>
+          </div>
+        </div>
+        <div class="hero-console reveal delay-1" aria-label="Animated JavaScript console">
+          <div class="console-top"><span></span><span></span><span></span><b>app.js</b></div>
+          <pre><code><i>const</i> app = {
+  learn: <em>true</em>,
+  build: <em>true</em>,
+  create() {
+    <i>return</i> "Let's code!";
+  }
+};
+
+console.log(app.create());</code></pre>
+          <div class="console-output"><span>▶</span> Let's code!</div>
+          <div class="floating-token token-a">async</div>
+          <div class="floating-token token-b">DOM</div>
+          <div class="floating-token token-c">fetch()</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">LEARN IN ORDER</span>
+          <h2>From first variable to real applications.</h2>
+          <p>The course follows the organization of the uploaded JS notes and turns each topic into a readable,
+            searchable learning page.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal"><span class="feature-icon">01</span>
+            <h3>Core JavaScript</h3>
+            <p>Variables, types, operators, conditions, loops, strings, arrays, objects and functions.</p><a
+              href="course.html#chapter-1">Explore chapters →</a>
+          </article>
+          <article class="feature-card reveal delay-1"><span class="feature-icon">02</span>
+            <h3>Browser & DOM</h3>
+            <p>Selectors, manipulation, events, delegation, forms, storage, timers and browser APIs.</p><a
+              href="course.html#chapter-41">Explore DOM →</a>
+          </article>
+          <article class="feature-card reveal delay-2"><span class="feature-icon">03</span>
+            <h3>Async JavaScript</h3>
+            <p>Fetch, promises, async/await, modules, event loop, debugging, security and performance.</p><a
+              href="course.html#chapter-50">Explore async →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-accent">
+      <div class="container cta-card reveal">
+        <div><span class="eyebrow">BUILD SOMETHING</span>
+          <h2>Don't just read the code. Run it.</h2>
+          <p>Use the live playground, counter and task-list applications to connect the concepts with actual browser
+            behavior.</p>
+        </div>
+        <a class="btn btn-primary" href="playground.html">Try JavaScript →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><strong>JavaScript Full Course</strong><span>@Roy</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

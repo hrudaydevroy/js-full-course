@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav"><a class="brand" href="index.html"><span class="brand-mark">JS</span><span>JavaScript
+          Full Course</span></a><button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="course.html">Full Course</a>
+        <a class="active" href="playground.html">Playground</a>
+        <a href="counter.html">Counter</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="course-hero compact">
+      <div class="container"><span class="eyebrow">LIVE PRACTICE</span>
+        <h1>Write. Run. Learn.</h1>
+        <p>Try JavaScript directly in your browser. Use <code>console.log()</code> to see output.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container playground">
+        <div class="editor-panel">
+          <div class="panel-head"><strong>JavaScript Editor</strong><button id="runCode"
+              class="btn btn-primary btn-small">▶ Run Code</button></div><textarea id="codeEditor" spellcheck="false">const name = "Hruday";
+const skills = ["HTML", "CSS", "JavaScript"];
+
+console.log(`Hello ${name}`);
+console.log("Skills:", skills);
+console.log("Total skills:", skills.length);</textarea>
+          <div class="editor-tip">Tip: change the values and run again.</div>
+        </div>
+        <div class="output-panel">
+          <div class="panel-head"><strong>Console Output</strong><button id="clearOutput"
+              class="ghost-btn">Clear</button></div>
+          <pre id="consoleOutput">Click “Run Code” to execute your example.</pre>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container"><strong>JavaScript Full Course</strong><span>@Roy</span></div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="playground.js"></script>
+</body>
+
+</html>

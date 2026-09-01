@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Full JavaScript Course</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="brand-mark">JS</span><span>JavaScript Full Course</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="course.html">Full Course</a>
+        <a href="playground.html">Playground</a>
+        <a href="counter.html">Counter</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="course-hero">
+      <div class="container">
+        <span class="eyebrow">COMPLETE JAVASCRIPT CURRICULUM</span>
+        <h1>60 chapters. One practical path.</h1>
+        <p>Every chapter is rendered from the uploaded <strong>JS notes.docx</strong>, including concept, purpose,
+          syntax/example, output, important points, real-time use and practice guidance.</p>
+        <div class="course-tools">
+          <label class="search-box"><span>⌕</span><input id="courseSearch" type="search"
+              placeholder="Search closures, DOM, fetch, arrays..." autocomplete="off"><button id="clearSearch"
+              type="button">×</button></label>
+          <div id="resultCount" class="result-count">60 chapters</div>
+        </div>
+      </div>
+    </section>
+    <section class="course-layout container">
+      <aside class="chapter-nav">
+        <div class="side-title">Course Index</div>
+        <div id="chapterIndex"></div>
+      </aside>
+      <div id="courseContent" class="course-content"></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <strong>JavaScript Full Course</strong>
+      <span>@Roy</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="course.js"></script>
+</body>
+
+</html>
